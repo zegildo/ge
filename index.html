@@ -1,0 +1,607 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Grupo Econômico</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+<style type="text/css">
+	.banner .image {
+    background-color: rgba(0, 0, 0, 0);
+    }
+    
+    .link{
+  	fill: none;
+  	stroke: #666;
+  	stroke-width: 1.5px;	
+	}
+
+	#licensing {
+  	fill: green;
+	}
+
+	.link.licensing {
+  	stroke: green;
+	}
+
+	.link.resolved {
+  	stroke-dasharray: 0,2 1;
+	}
+
+	circle {
+	  fill: #ccc;
+	  stroke: #333;
+	  stroke-width: 1.5px;
+	}
+
+	text {
+	  font: 10px sans-serif;
+	  pointer-events: none;
+	  /*text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;*/
+	}
+
+</style>
+
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<!-- One -->
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right" id="one">
+
+						<div class="content">
+							
+							<h1>Construção Automática de Grupos Econômicos.</h1>
+							<ul class="actions stacked">
+								<li><a href="#two" class="button big wide smooth-scroll-middle">Detalhes</a></li>
+							</ul>
+						</div>
+						<div class="image">
+
+							<img src="images/grupo_economico.jpg" alt="" /-->
+
+						</div>
+					</section>
+
+				<!-- Two -->
+				<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right" id="two">
+
+						<div class="content">
+							
+							<h1>Curiosidades sobre a Base da Receita Federal</h1>
+							<ul class="actions stacked">
+								<li><a href="#three" class="button big wide smooth-scroll-middle">Detalhes</a></li>
+							</ul>
+						</div>
+						<div class="image">
+
+							<img src="images/receita_federal.jpg" alt="" /-->
+
+						</div>
+				</section>
+
+
+				<!-- Three -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="three">
+						<div class="content">
+							<h1>Apenas 27% das empresas possuem relação societária</h1>
+							<p>Considerando toda a base de dados da receita federal até junho de 2020 temos um total de 43.887.581 empresas cadastradas (cnpjs distintos, incluindo matrizes e filiais), desse volume, apenas 11.893.293 possuem algum tipo de relação societária seja com pessoa física ou jurídica.</p>
+							<ul class="actions stacked">
+								<li><a href="#four" class="button big wide smooth-scroll-middle">1 de 7</a></li>
+							</ul>
+						</div>
+
+						<div class="content">
+							<canvas id="grafico_1"></canvas>
+						</div>
+					</section>
+
+				<!-- Four -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="four">
+						<div class="content">
+							<h1>Apenas 2% das relações societárias ocorrem entre empresas</h1>
+							<p>Se considerarmos apenas as empresas que possuem alguma relação societária seja com pessoa física, jurídica ou entidade estangeira contabilizam-se que 26.162.703 de relações são entre empresas e pessoas físicas, 787.133 entre empresas e 19.007 com entidades estrangeiras.</p>
+							<ul class="actions stacked">
+								<li><a href="#five" class="button big wide smooth-scroll-middle">2 de 7</a></li>
+							</ul>
+						</div>
+						<div class="content">
+							<canvas id="grafico_2"></canvas>
+						</div>
+					</section>
+
+				<!-- Five -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="five">
+						<div class="content">
+							<h1>47% das empresas são ativas, 45% são baixadas</h1>
+							<p> Menos da metade das empresas presentes na base correspondem a empresas 
+							ativas.</p>
+							<ul class="actions stacked">
+								<li><a href="#six" class="button big wide smooth-scroll-middle">3 de 7</a></li>
+							</ul>
+						</div>
+						<div class="content">
+							<canvas id="grafico_3"></canvas>
+						</div>
+					</section>
+
+				<!-- Six -->
+					<section class="wrapper style1 align-center" id="six">
+						<div class="inner">
+							<h1>Pessoas & Empresas</h1>
+							<p>A empresa que mais possui sócios pessoa-física é QUINTON PRONTO SOCORRO LTDA com 658 sócios.</p> 
+							<p>A empresa que mais possui sócios pessoa-jurídica é a  UNIMED PARTICIPAÇÕES LTDA com 228 sócios.</p>
+							<ul class="actions stacked">
+								<li><a href="#seven" class="button big wide smooth-scroll-middle">4 de 7</a></li>
+							</ul>
+						</div>
+					</section>
+
+					<!-- Seven -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="seven">
+						<div class="content">
+							<canvas id="grafico_4"></canvas>
+						</div>
+						<div class="content">
+							<h1>Há pessoas físicas com mais de 13.000 relações societárias</h1>
+							<p> Curiosamente, as pessoas que mais possuem relações societárias com empresas possuem relação trabalhista com o banco Bradesco.</p>
+							<ul class="actions stacked">
+								<li><a href="#eight" class="button big wide smooth-scroll-middle">5 de 7</a></li>
+							</ul>
+						</div>
+						
+					</section>
+
+					<!-- Eight -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="eight">
+						<div class="content">
+							<h1>Há empresas com mais de 2.500 relações societárias</h1>
+							<p>Há mais de uma centava de empresas com mais de 1.000 relações societárias com outras empresas.</p>
+							<ul class="actions stacked">
+								<li><a href="#nine" class="button big wide smooth-scroll-middle">6 de 7</a></li>
+							</ul>
+						</div>
+						<div class="content">
+							<canvas id="grafico_5"></canvas>
+						</div>
+					</section>
+
+					<!-- Nine -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="nine">
+						<div class="content">
+							<canvas id="grafico_6"></canvas>
+						</div>
+						<div class="content">
+							<h1>Há 15.044 empresas do tipo Consórcio. Com 71% delas ainda ativas</h1>
+							<p>A base atual da receita federal conta com mais de 10.000 empresas na modalidade consórcio. Em grande medida, estas uniões ocasionam muitos aglomerados societários e tivemos o cuidado de retirá-los da análise.</p>
+							<ul class="actions stacked">
+								<li><a href="#ten" class="button big wide smooth-scroll-middle">7 de 7</a></li>
+							</ul>
+						</div>
+						
+					</section>
+
+					<!-- Ten -->
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right" id="ten">
+
+						<div class="content">
+							
+							<h1>V&V</h1>
+							<h1>Verificação e Validação</h1>
+							<ul class="actions stacked">
+								<li><a href="#eleven" class="button big wide smooth-scroll-middle">Detalhes</a></li>
+							</ul>
+						</div>
+						<div class="image">
+
+							<img src="images/validacao.svg" alt="" /-->
+
+						</div>
+					</section>
+
+
+					<!-- Eleven -->
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right" id="eleven">
+
+						<div class="content">
+							
+							<h1>Previsão vs Revocação</h1>
+							<ul class="actions stacked">
+								<li><a href="#twoelve" class="button big wide smooth-scroll-middle">Detalhes</a></li>
+							</ul>
+						</div>
+						<div class="content">
+							<canvas id="grafico_7"></canvas>
+						</div>
+					</section>
+
+
+
+
+					<!-- Twoelve -->
+					<section class="wrapper style1 align-center" id="twoelve">
+						<div class="inner">
+							<h1>Tabela de Resultados</h1>
+							<iframe class="airtable-embed" src="https://airtable.com/embed/shrcJuVSA65ZN4QGK?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+							<ul class="actions stacked">
+								<li><a href="#thirteen" class="button big wide smooth-scroll-middle">Conclusões</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Thirteen -->
+				<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right" id="thirteen">
+
+						<div class="content">
+							
+							<h1>Conclusões</h1>
+							<ul class="actions stacked">
+								<li><a href="#fourteen" class="button big wide smooth-scroll-middle">Detalhes</a></li>
+							</ul>
+						</div>
+						<div class="image" >
+
+							<img src="images/conclusion.png" alt="" /-->
+
+						</div>
+				</section>
+				
+				<!-- Fourteen -->
+				<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right" id="fourteen">
+
+						<div class="content">
+							<canvas id="grafico_9"></canvas>
+						</div>
+						
+						<div class="content">
+							
+							<h1>Precisão média de 71% & Revocação média de 48%</h1>
+							<p>A cada 100 empresas retornadas, 71 constavam no rol de empresas informadas no formulário de notificação como pertencentes ao grupo econômico. A cada 100 empresas cadastradas no formulário de notificação, apenas 48 delas puderam ser associadas na base da receita.</p>
+							<p>É necessário discutir: 1) Os falso-postivos existem na base da receita federal? 2) Por que há relações declaradas que não existem na base da receita federal?</p>
+							<ul class="actions stacked">
+								<li><a href="#fiveteen" class="button big wide smooth-scroll-middle">Detalhes</a></li>
+							</ul>
+						</div>
+						
+				</section>
+
+
+				<!-- Fiveteen -->
+				<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right" id="fiveteen">
+
+						<div class="content">
+							
+							<h1>100% dos falso positivos possuiam um caminho entre as empresas</h1>
+							<p>Um falso-positivo indica uma empresa que o algoritmo apontou como pertencente ao grupo econômico, sendo que ela não foi informada durante o processo de notificação. Ao analizarmos todos os falsos-positivos dos 32 ensaios analisados, todos os valores apresentados possuiam um caminho societário entre a empresa alvo e a empresa considerada como falso-postivo. Ao lado, encontra-se um exemplo de falso-positivo, porém é possível verificar a relação entre a empresa COMPANHIA BRASILEIRA DE DISTRIBUIÇÃO e a AENIK PARTICIPAÇÕES.</p>
+							<ul class="actions stacked">
+								<li><a href="#sixteen" class="button big wide smooth-scroll-middle">Detalhes</a></li>
+							</ul>
+						</div>
+						<div class="content" id="graph">
+						</div>
+				</section>
+
+				<!-- Sixteen -->
+				<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right" id="sixteen">
+
+						<div class="content">
+							
+							<h1>18% dos formulários de notificação possuem alguma inconsistência</h1>
+							<p>Citações de empresas baixadas, inatavas ou suspensas, problemas ortográficos que impedem a identificação da empresa sendo citada, empresas homônimas que levam a cnpjs distintos, empresas estrangeiras sem identificação na base da receita, entre outros problemas foram comumente encontrados na análise. A obrigatoriedade de um identificador de empresa tal como o cnpj mostrou-se de grande importância para todas as análises dessa natureza.</p>
+							<ul class="actions stacked">
+								<li><a href="#one" class="button big wide smooth-scroll-middle">Obrigado!</a></li>
+							</ul>
+						</div>
+						<div class="image" >
+
+							<img src="images/honda-motor.jpg" alt="" /-->
+
+						</div>
+				</section>
+
+
+
+
+				<!-- Five -->
+					<!--section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>Our Projects</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
+						</div-->
+
+						<!-- Gallery -->
+							<!--div class="gallery style2 medium lightbox onscroll-fade-in">
+								<article>
+									<a href="images/gallery/fulls/01.jpg" class="image">
+										<img src="images/gallery/thumbs/01.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Ipsum Dolor</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/02.jpg" class="image">
+										<img src="images/gallery/thumbs/02.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Feugiat Lorem</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/03.jpg" class="image">
+										<img src="images/gallery/thumbs/03.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Magna Amet</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/04.jpg" class="image">
+										<img src="images/gallery/thumbs/04.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Sed Tempus</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/05.jpg" class="image">
+										<img src="images/gallery/thumbs/05.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Ultrices Magna</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/06.jpg" class="image">
+										<img src="images/gallery/thumbs/06.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Sed Tempus</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/07.jpg" class="image">
+										<img src="images/gallery/thumbs/07.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Ipsum Lorem</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/08.jpg" class="image">
+										<img src="images/gallery/thumbs/08.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Magna Risus</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/09.jpg" class="image">
+										<img src="images/gallery/thumbs/09.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Tempus Dolor</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/10.jpg" class="image">
+										<img src="images/gallery/thumbs/10.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Sed Etiam</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/11.jpg" class="image">
+										<img src="images/gallery/thumbs/11.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Magna Lorem</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/12.jpg" class="image">
+										<img src="images/gallery/thumbs/12.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Ipsum Dolor</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+							</div>
+
+					</section-->
+
+				<!-- Six -->
+					<!--section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>Ipsum sed consequat</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
+							<div class="items style1 medium onscroll-fade-in">
+								<section>
+									<span class="icon style2 major fa-gem"></span>
+									<h3>Lorem</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-save"></span>
+									<h3>Ipsum</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-chart-bar"></span>
+									<h3>Dolor</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-wifi"></span>
+									<h3>Amet</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-cog"></span>
+									<h3>Magna</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon style2 major fa-paper-plane"></span>
+									<h3>Tempus</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-desktop"></span>
+									<h3>Aliquam</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-sync-alt"></span>
+									<h3>Elit</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-hashtag"></span>
+									<h3>Morbi</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-bolt"></span>
+									<h3>Turpis</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-envelope"></span>
+									<h3>Ultrices</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-leaf"></span>
+									<h3>Risus</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+							</div>
+						</div>
+					</section-->
+
+				<!-- Seven -->
+					<!--section class="wrapper style1 align-center">
+						<div class="inner medium">
+							<h2>Get in touch</h2>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field half">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" value="" />
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" value="" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="6"></textarea>
+									</div>
+								</div>
+								<ul class="actions special">
+									<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+
+						</div>
+					</section-->
+
+				<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://twitter.com/zegildo" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.facebook.com/zegildo" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<!--li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li-->
+								<li><a href="https://www.linkedin.com/in/zegildo/" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="mailto:jose.araujo@cade.gov.br" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+							<p>&copy;<a href="https://zegildo.com">zegildo.com</a>.</p>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://d3js.org/d3.v3.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+			<script src="assets/js/graficos/grafico_1.js"></script>
+			<script src="assets/js/graficos/grafico_2.js"></script>
+			<script src="assets/js/graficos/grafico_3.js"></script>
+			<script src="assets/js/graficos/grafico_4.js"></script>
+			<script src="assets/js/graficos/grafico_5.js"></script>
+			<script src="assets/js/graficos/grafico_6.js"></script>
+			<script src="assets/js/graficos/grafico_7.js"></script>
+			<script src="assets/js/graficos/grafico_8.js"></script>
+			<script src="assets/js/graficos/grafico_9.js"></script>
+
+	</body>
+</html>
