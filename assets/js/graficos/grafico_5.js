@@ -27,5 +27,14 @@ var ctx = document.getElementById('grafico_5');
 				            ],
 				            borderWidth: 1
 				        }]
-				    }
+				    },
+				    options: {
+						    scales: {
+						        yAxes: [{
+						            ticks: {
+						                beginAtZero: true
+						            }
+						        }]
+						    }
+						}
 				});

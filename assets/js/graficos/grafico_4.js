@@ -3,11 +3,11 @@ var ctx = document.getElementById('grafico_4');
 				    type: 'bar',
 				    data: {
 				        labels: [
-				        'MARCELO DE ARAUJO NORONHA', 
-				        'ANDRE RODRIGUES CANO', 
-				        'EURICO RAMOS FABRI', 
-				        'CASSIANO RICARDO SCARPELLI', 
-				        'ALEXSANDRO BROEDEL LOPES'],
+				        'pessoa_1', 
+				        'pessoa_2', 
+				        'pessoa_3', 
+				        'pessoa_4', 
+				        'pessoa_5'],
 				        datasets: [{
 				            label: 'Relações Societárias',
 				            data: [13521, 13516, 13342, 13342, 12058],
@@ -31,5 +31,14 @@ var ctx = document.getElementById('grafico_4');
 				            ],
 				            borderWidth: 1
 				        }]
-				    }
+				    },
+				    options: {
+						    scales: {
+						        yAxes: [{
+						            ticks: {
+						                beginAtZero: true
+						            }
+						        }]
+						    }
+						}
 				});

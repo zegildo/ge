@@ -1,11 +1,11 @@
-var ctx = document.getElementById('grafico_6');
+var ctx = document.getElementById('grafico_10');
 				var myChart = new Chart(ctx, {
 				    type: 'doughnut',
 				    data: {
-				        labels: ['Consórcios Ativos', 'Consórcios Não-Ativos'],
+				        labels: ['Matrizes', 'Filiais'],
 				        datasets: [{
-				            label: '# Consórcios',
-				            data: [10675, 4369],
+				            label: 'Quantidade de Empresas',
+				            data: [41389664, 2497917],
 				            backgroundColor: [
 				                'rgba(255, 99, 132, 0.2)',
 				                'rgba(54, 162, 235, 0.2)'
