@@ -1,33 +1,26 @@
 var ctx = document.getElementById('grafico_5');
 				var myChart = new Chart(ctx, {
-				    type: 'bar',
+					type: 'line',
 				    data: {
-				        labels: [
-				        'ITAU CONSULTORIA', 
-				        'ITAU UNIBANCO', 
-				        'LATAM', 
-				        'ARCOS DORADOS', 
-				        'GRUPO BIG'],
+						labels:['1º','2º','3º','4º','5º'],
 				        datasets: [{
-				            label: 'Relações Societárias',
+				            label: 'Top 5 PJ 2020',
 				            data: [2818, 2784, 2469, 2468, 1642],
-				            backgroundColor: [
-				            'rgba(0, 0, 0, 0.2)',
-				            'rgba(54, 162, 235, 0.2)',
-				            'rgba(255, 165, 0, 0.2)',
-				            'rgba(11, 156, 49, 0.2)',
-				            'rgba(255, 99, 132, 0.2)'
-				            ],
-				            borderColor: [
-				             'rgba(0, 0, 0, 1)',
-				             'rgba(54, 162, 235, 1)',
-				             'rgba(255, 165, 0, 1)', 
-				             'rgba(11, 156, 49, 1)',
-				             'rgba(255, 99, 132, 1)'
-				            ],
-				            borderWidth: 1
-				        }]
-				    },
+				            borderColor:'rgba(54, 162, 235)',				               
+							fill:false,
+							stepped: true,
+				        },
+
+						{
+				            label: 'Top 5 PJ 2021',
+				            data: [359, 340, 240, 228, 163],
+				            borderColor: 'rgba(255, 99, 132)',
+							fill:false,
+							tension: 0.1
+				        }
+					
+					]},
+
 				    options: {
 						    scales: {
 						        yAxes: [{
