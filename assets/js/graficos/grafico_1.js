@@ -8,11 +8,11 @@ var myChart = new Chart(ctx, {
 			label: '# Relações Societárias',
 			data: [500487,272371],
 			backgroundColor: [
-				'rgba(255, 99, 132, 0.2)',
+				'rgba(54, 162, 235, 0.2)',
 				'rgba(54, 162, 235, 0.2)'
 			],
 			borderColor: [
-				'rgb(255, 99, 132)',
+				'rgb(54, 162, 235)',
 				'rgb(54, 162, 235)'
 			],
 			borderWidth: 1

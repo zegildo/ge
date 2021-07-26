@@ -10,10 +10,10 @@ var ctx = document.getElementById('grafico_10');
 				            data: [41389664, 45881636],
 				            backgroundColor:[
 								'rgba(255, 99, 132, 0.2)',
-								'rgba(54, 162, 235, 0.2)'],
+								'rgba(255, 99, 132, 0.2)'],
 				            borderColor: 
-									['rgb(255, 99, 132)',
-									 'rgb(54, 162, 235)'],
+									['rgba(255, 99, 132)',
+									 'rgba(255, 99, 132)'],
 				            borderWidth: 1,
 							fill: false,
       						stepped: true,
